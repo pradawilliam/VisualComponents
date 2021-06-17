@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visual Components </title>
+	<script src="js/menu-component.js"></script>
+	<script src="js/card-img.js"></script>
+	<script src="js/card.js"></script>
+	<script src="js/button.js"></script>
+</head>
+<body>
+	<menu-component 
+		name1='Inicio'
+		styles='
+		#menu ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#menu #item{
+			float: left;
+		}
+		
+		#menu #item a{
+			background: rgb(214, 212, 212);
+			color: black;
+			padding: 15px 115px;
+			display: block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			text-decoration: none;
+		}
+		
+		#menu #desplegable{
+			display: none;
+			max-width: 289px;
+		}
+		
+		#menu #item a:hover{
+			background: #ddec9a;
+			color: black;
+		}
+		
+		#menu #item:hover #desplegable{
+			display: block; 
+		}'
+	>
+	</menu-component> 
+
+	<card-img 
+    title ="avatar" 
+    text ="
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, optio vitae maxime, nam quaerat quos magnam eveniet perspiciatis fugit perferendis eos eius consectetur officiis facilis. Soluta dicta quasi nostrum ." 
+    colo="yellow" 
+    img="default-img.jpg">
+    </card-img>
+
+    <card-default
+    title="hello world"
+    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, optio vitae maxime, nam quaerat quos magnam eveniet perspiciatis fugit perferendis eos eius consectetur officiis facilis. Soluta dicta quasi nostrum quae." 
+    colo="gray"
+    ></card-default>
+
+    <button-component></button-component>
+
+</body>
+</html>
