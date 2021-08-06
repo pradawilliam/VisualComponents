@@ -11,6 +11,8 @@ class Controller {
 
 const controller = new Controller()
 
-controller.registro("./js/scripts/styles")
-controller.registro("./js/components/button")
+controller.registro("./js/comunication/request")
+controller.registro("./js/components/navbar")
 controller.registro("./js/components/card")
+controller.registro("./js/components/button")
+

@@ -4,7 +4,7 @@ class ButtonComponent extends VisualComponent{
   constructor () {
     super();
     this.top = "-50%"
-    this.left = "145%"
+    this.left = "138%"
     this.padding = "2%"
     this.backgroundColor = "rgb(240, 238, 238)"
     this.borderRadius = "1.5%"

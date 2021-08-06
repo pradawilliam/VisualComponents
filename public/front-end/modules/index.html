@@ -45,51 +45,36 @@
     </head>
     <body>
         <div id="container" style="justify-content: center; width: 650px;">
+            <div id="navbar">
+                <navbar-component>
+                    <ul>
+                        <h4 id="hola1"></h4>
+                        <li id="item"><a href="#" >Desplegable</a>
+                            <ul id="desplegable" >
+                                <li><a href="#" id="hiReflec1">Reflexion 1</a></li>	
+                                <li><a href="#" id="hiReflec1">Reflexion 2</a></li>
+                                <li><a href="#" id="hiReflec1">Reflexion 3</a></li>	 
+                            </ul>
+                        </li>	
+                    </ul>
+                </navbar-component>
+            </div>
             <div id="card-component">
                 <card-component>
                     <img src="./js/img/default-img.jpg" ></img>
                     <h2>Avatar</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, optio vitae maxime, nam quaerat quos magnam eveniet perspiciatis 
                         fugit perferendis eos eius consectetur officiis facilis. Soluta dicta quasi nostrum .</p>
+                    <h4 id="hola2" style="font-family: Arial, Helvetica, sans-serif"></h4>
+                    <button id="hiReflec2">Reflection</button>
                 </card-component>
             </div>
             <div id="button-component">
+                <h4 id="hola3" style="font-family: Arial, Helvetica, sans-serif; position: relative; left: 860px;"></h4>
                 <button-component>
-                    <h3 onclick="press()">BUTTON</h3>
+                    <h3 id="hiReflec3">PRESIONAR</h3>
                 </button-component>
             </div>   
-            <!--<div id="edit" style="left: 100px;">
-                <h3>Colors</h3>
-                <label for="originalColor">Default</label>
-                <input type="radio" name="color" value="rgb(240, 238, 238)" id="originalColor" />
-                <label for="skyColor">Sky blue</label>
-                <input type="radio" name="color" value="skyblue" id="skyColor" />
-                <label for="limeColor">Lime</label>
-                <input type="radio" name="color" value="lime" id="limeColor" />
-                <h3>Dimensions</h3>
-                <label for="widthInput">Width</label>
-                <input type="text" id="widthInput" placeholder="px, %, in, cm, etc..." />
-                <label for="heightInput">Height</label>
-                <input type="text" id="heightInput" placeholder="px, %, in, cm, etc..." />
-                <button id="setDimensionBtn">Set dimensions</button>
-                <h3>Position</h3>
-                <label for="topInput">Top</label>
-                <input type="text" id="topInput" placeholder="px, %, in, cm, etc..." />
-                <label for="leftInput">Left</label>
-                <input type="text" id="leftInput" placeholder="px, %, in, cm, etc..." />
-                <button id="setPositionBtn">Set position</button>
-                <br></br>
-                <button onclick="navegar()">Navegar hacia otro componente</button>
-            </div>-->
         </div>
     </body>
-    <script>
-        function navegar(){
-            window.location.href = "pag-component1.html";
-        }
-
-        function press(){
-            alert('Me presionaste');
-        }
-    </script>
 </html>
